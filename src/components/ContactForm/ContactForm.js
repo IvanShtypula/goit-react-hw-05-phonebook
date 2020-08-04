@@ -27,7 +27,7 @@ class ContactForm extends Component {
         sameName: true,
       });
       // return alert(`${value} is already in contacts.`);
-      setTimeout(this.timeOutAlert, 1000);
+      setTimeout(this.timeOutAlert, 1500);
       return;
     }
 
@@ -63,11 +63,15 @@ class ContactForm extends Component {
         // autoComplete="off"
         onSubmit={this.handleSubmit}
       >
-        {sameName ? (
-          <CSSTransition classNames="alertWindow" in={sameName} timeout={500} unmountOnExit>
-            <div className={formStyle.alertModal}>ALERT</div>
-          </CSSTransition>
-        ) : null}
+        <CSSTransition
+          classNames="alertWindow"
+          in={sameName}
+          timeout={1000}
+          unmountOnExit
+        >
+          <div className={formStyle.alertModal}>Contact already exist!</div>
+        </CSSTransition>
+
         <label htmlFor="name" className={formStyle["contactForm__label"]}>
           Name
         </label>
