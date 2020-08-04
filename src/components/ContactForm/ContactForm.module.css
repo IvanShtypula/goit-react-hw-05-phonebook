@@ -1,0 +1,77 @@
+.contactForm {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contactForm__label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.contactForm__input { 
+  display: block;
+  box-sizing:border-box;
+  border: 1px solid rgb(43, 42, 42);
+  border-radius: 6px; 
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contactForm__input:focus{
+  outline-color: rgb(23, 91, 150);
+}
+
+.contactForm__submit {
+  border: none;
+  border-radius: 6px;
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(23, 91, 150);
+  cursor: pointer;
+  transition: 0.5s ease;
+  width:100%;
+}
+
+.contactForm__submit:hover {
+  box-shadow: 0px 0px 8px rgb(45, 122, 238);
+}
+
+.alertModal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+}
+/* 
+.alertWindowEnter{
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+.alertWindowEnterActive{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms linear;
+}
+
+.alertWindowExit{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.alertWindowExitActive{
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 500ms linear;
+} */

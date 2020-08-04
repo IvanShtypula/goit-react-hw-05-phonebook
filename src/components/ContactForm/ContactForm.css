@@ -1,0 +1,22 @@
+.alertWindow-enter{
+  opacity: 0;
+  /* transform: translateX(200px); */
+}
+
+.alertWindow-enter-active{
+  opacity: 1;
+  /* transform: translateX(0); */
+  transition: all 500ms linear;
+}
+
+.alertWindow-exit{
+  opacity: 1;
+  /* transform: translateX(0); */
+}
+
+.alertWindow-exit-active{
+  opacity: 0;
+  /* transform: translateX(-200px); */
+  transition: all 500ms linear;
+}
+

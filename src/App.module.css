@@ -1,0 +1,12 @@
+.container{
+  max-width: 640px;
+  padding: 40px 80px;  
+}
+.title{
+  color: rgb(23, 91, 150);
+}
+
+.contactsList{
+  padding: 0;
+}
+
